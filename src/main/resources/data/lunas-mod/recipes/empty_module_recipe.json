@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:metal_structure"
+        },
+        "F": {
+            "item": "lunas-mod:metal_framing"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:empty_module"
+    }
+  }

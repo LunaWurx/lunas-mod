@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ODO",
+        "COC",
+        "ODO"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:cobblestone"
+        },
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        }
+        
+    },
+    "result": {
+      "item": "lunas-mod:bedrock_chip"
+    }
+  }

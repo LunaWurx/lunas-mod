@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "## ",
+        "#I ",
+        " I "
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:refined_stone_b"
+        },
+        "I": {
+            "item": "lunas-mod:refined_plank"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:refined_stone_axe"
+    }
+}

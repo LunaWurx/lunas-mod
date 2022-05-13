@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:refined_stone"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:refined_stone_b",
+      "count": 4
+    }
+  }

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lunas-mod:item/heavy_iron_axe"
+    }
+}

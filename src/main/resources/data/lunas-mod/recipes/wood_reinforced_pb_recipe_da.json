@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reinforced_wood",
+    "pattern": [
+        "#0#",
+        "#0#",
+        "#0#"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:dark_oak_refined_plank"
+        },
+        "0": {
+            "item": "lunas-mod:pebble_block"
+        }
+    },
+    "result": {
+    "count": 8,
+      "item": "lunas-mod:reinforced_wood_pb"
+    }
+  }

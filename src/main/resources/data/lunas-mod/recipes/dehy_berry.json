@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:sweet_berries"
+    },
+    "result": "lunas-mod:dehydrated_sweet_berries",
+    "experience": 0.3,
+    "cookingtime": 25
+}

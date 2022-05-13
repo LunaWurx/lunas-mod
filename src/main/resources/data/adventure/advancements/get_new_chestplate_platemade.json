@@ -1,0 +1,42 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Chestplate of Plates"
+        },
+        "description": {
+            "text": "Have a chestplate made of plates of panels."
+        },
+        "icon": {
+            "item": "lunas-mod:panel_chestplate"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "blast": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["lunas-mod:panel_chestplate"],
+                        "count": {
+                            "min": 1,
+                            "max": 64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "adventure:get_metal_sheeting",
+    "requirements": [
+        [
+            "blast"
+        ]
+    ]
+
+}

@@ -1,0 +1,5 @@
+{
+    "variants": {
+      "": { "model": "lunas-mod:block/fake_bedrock" }
+    }
+  }

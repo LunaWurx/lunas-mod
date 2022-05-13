@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:copper_sheeting"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:copper_panel",
+      "count": 4
+    }
+  }

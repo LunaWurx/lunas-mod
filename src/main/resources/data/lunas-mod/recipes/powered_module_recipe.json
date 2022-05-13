@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#F#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "F": {
+            "item": "lunas-mod:empty_module"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:powered_module"
+    }
+  }

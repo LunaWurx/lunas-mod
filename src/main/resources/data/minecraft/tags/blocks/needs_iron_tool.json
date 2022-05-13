@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+      "lunas-mod:metal_framing",
+      "lunas-mod:metal_structure",
+      "lunas-mod:blast_proof_wall"
+    ]
+  }

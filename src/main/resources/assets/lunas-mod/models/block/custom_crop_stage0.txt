@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+      "crop": "lunas-mod:block/custom_crop_block_stage0"
+    }
+  }

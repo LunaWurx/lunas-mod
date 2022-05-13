@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:netherite_scrap"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:netherite_scrap_sheeting",
+      "count": 2
+    }
+  }

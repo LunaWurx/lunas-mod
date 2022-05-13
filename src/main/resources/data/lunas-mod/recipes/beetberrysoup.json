@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#s#",
+        "#s#",
+        "#b#"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:crushed_beetroot"
+        },
+        "s": {
+            "item": "lunas-mod:dehydrated_sweet_berries"
+        },
+        "b": {
+            "item": "minecraft:bowl"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:beetroot_berry_soup",
+      "count": 1
+    }
+  }

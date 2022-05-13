@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:metal_sheeting"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:metal_framing",
+      "count": 4
+    }
+  }

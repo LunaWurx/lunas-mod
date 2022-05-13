@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " # ",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:acacia_log"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:acacia_refined_plank",
+      "count": 6
+    }
+  }

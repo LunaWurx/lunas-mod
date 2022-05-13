@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "M",
+        "#",
+        "M"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_shovel"
+        },
+        "M": {
+            "item": "lunas-mod:heavy_mold_sh"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:heavy_iron_shovel",
+      "count": 1
+    }
+  }

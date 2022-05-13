@@ -1,0 +1,42 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Acquiring some more hardware"
+        },
+        "description": {
+            "text": "Craft Iron Sheeting"
+        },
+        "icon": {
+            "item": "lunas-mod:metal_sheeting"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "sheetGet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["lunas-mod:metal_sheeting"],
+                        "count": {
+                            "min": 1,
+                            "max": 64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "adventure:time_for_furnace",
+    "requirements": [
+        [
+            "sheetGet"
+        ]
+    ]
+
+}

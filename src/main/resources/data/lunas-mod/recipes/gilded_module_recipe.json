@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#F#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "F": {
+            "item": "lunas-mod:empty_module"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:gilded_module"
+    }
+  }

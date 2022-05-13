@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " M ",
+        "I#I",
+        " M "
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:netherite_diamond"
+        },
+        "M": {
+            "item": "minecraft:diamond_shovel"
+        },
+        "I": {
+            "item": "lunas-mod:heavy_iron_shovel"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:chiseled_diamond_shovel",
+      "count": 1
+    }
+  }

@@ -1,0 +1,93 @@
+{
+  "item.lunas-mod.pebble": "Pebble",
+  "itemGroup.lunas-mod.tools": "Tools",
+  "itemGroup.lunas-mod.foods": "Foods",
+  "itemGroup.lunas-mod.refined_items": "Refined Items",
+  "itemGroup.lunas-mod.metals_related": "Metal-Made",
+  "itemGroup.lunas-mod.pebbles_stuff": "Pebble Stuff",
+  "itemGroup.lunas-mod.materials": "Materials",
+
+  "item.lunas-mod.wood_shaving": "Wood Shaving",
+  "block.lunas-mod.pebble_block": "Pebble Block",
+  "block.lunas-mod.reinforced_wood_pb": "Wooden Plank Reinforced Pebble Block",
+  "block.lunas-mod.reinforced_stone_pb": "Stone Slab Reinforced Pebble Block",
+
+  "item.lunas-mod.refined_plank": "Refined Oak Plank",
+  "item.lunas-mod.acacia_refined_plank": "Refined Acacia Plank",
+  "item.lunas-mod.birch_refined_plank": "Refined Birch Plank",
+  "item.lunas-mod.jungle_refined_plank": "Refined Jungle Plank",
+  "item.lunas-mod.spruce_refined_plank": "Refined Spruce Plank",
+  "item.lunas-mod.dark_oak_refined_plank": "Refined Dark Oak Plank",
+  "item.lunas-mod.refined_stone": "Refined Stone Slab",
+
+  "item.lunas-mod.bedrock_chip": "Bedrock Chip",
+  "item.lunas-mod.bedrock_shard": "Bedrock Shard",
+  "item.lunas-mod.netherite_diamond": "Fusion Diamond",
+  "item.lunas-mod.netherite_scrap_sheeting": "Netherite Scrap Sheeting",
+  
+  "block.lunas-mod.refined_planks_b": "Block of Refined Oak Planks",
+  "block.lunas-mod.acacia_refined_planks_b": "Block of Refined Acacia Planks",
+  "block.lunas-mod.birch_refined_planks_b": "Block of Refined Birch Planks",
+  "block.lunas-mod.spruce_refined_planks_b": "Block of Refined Spruce Planks",
+  "block.lunas-mod.jungle_refined_planks_b": "Block of Refined Jungle Planks",
+  "block.lunas-mod.dark_oak_refined_planks_b": "Block of Refined Dark Oak Planks",
+  "block.lunas-mod.refined_stone_b": "Block of Refined Stone Slabs",
+
+  "item.lunas-mod.refined_stone_pickaxe": "Refined Stone Pickaxe",
+  "item.lunas-mod.refined_stone_axe": "Refined Stone Axe",
+  "item.lunas-mod.refined_stone_hoe": "Refined Stone Hoe",
+  "item.lunas-mod.refined_stone_shovel": "Refined Stone Shovel",
+  "item.lunas-mod.refined_stone_sword": "Refined Stone Sword",
+
+  "item.lunas-mod.heavy_iron_pickaxe": "Heavy Iron Pickaxe",
+  "item.lunas-mod.heavy_iron_axe": "Heavy Iron Axe",
+  "item.lunas-mod.heavy_iron_hoe": "Heavy Iron Hoe",
+  "item.lunas-mod.heavy_iron_shovel": "Heavy Iron Shovel",
+  "item.lunas-mod.heavy_iron_sword": "Heavy Iron Sword",
+
+  "item.lunas-mod.heavy_mold_p": "Heavy Iron Pickaxe Mold",
+  "item.lunas-mod.heavy_mold_a": "Heavy Iron Axe Mold",
+  "item.lunas-mod.heavy_mold_h": "Heavy Iron Hoe Mold",
+  "item.lunas-mod.heavy_mold_sh": "Heavy Iron Shovel Mold",
+  "item.lunas-mod.heavy_mold_sw": "Heavy Iron Sword Mold",
+
+  "item.lunas-mod.chiseled_diamond_axe": "Chiseled Diamond Axe",
+  "item.lunas-mod.chiseled_diamond_shovel": "Chiseled Diamond Shivel",
+  "item.lunas-mod.chiseled_diamond_sword": "Chiseled Diamond Sword",
+  "item.lunas-mod.chiseled_diamond_hoe": "Chiseled Diamond Hoe",
+  "item.lunas-mod.chiseled_diamond_pickaxe": "Chiseled Diamond Pickaxe",
+
+  "item.lunas-mod.metal_sheeting": "Iron Sheeting",
+  "item.lunas-mod.metal_panel": "Iron Panel",
+  "item.lunas-mod.copper_sheeting": "Copper Sheeting",
+  "item.lunas-mod.copper_panel": "Copper Panel",
+  "item.lunas-mod.panel_helmet": "Panel-Made Helmet",
+  "item.lunas-mod.panel_chestplate": "Panel-Made Chestplate",
+  "item.lunas-mod.panel_leggings": "Panel-Made Leggings",
+  "item.lunas-mod.panel_boots": "Panel-Made Boots",
+
+  "item.lunas-mod.cooked_beetroot_seeds": "Cooked Beetroot Seeds",
+  "item.lunas-mod.dehydrated_sweet_berries": "Dehydrated Sweet Berries",
+  "item.lunas-mod.crushed_beetroot": "Crushed Sweetroot",
+  "item.lunas-mod.beetroot_berry_soup": "Beetroot Berry Soup",
+  "item.lunas-mod.burger": "Burger",
+  "item.lunas-mod.apple_pie": "Apple Pie",
+
+
+  "block.lunas-mod.copper_conductor": "Copper Conduction Block",
+
+  "block.lunas-mod.fake_bedrock": "Fake Bedrock",
+
+  "block.lunas-mod.metal_structure": "Metal Structure Block",
+  "block.lunas-mod.metal_framing": "Metal Framing Block",
+  "block.lunas-mod.blast_proof_wall": "Blast Proof Wall",
+
+  "block.lunas-mod.empty_module": "Empty Module",
+  "block.lunas-mod.gilded_module": "Gilded Module",
+  "block.lunas-mod.powered_module": "Powered Module",
+  "block.lunas-mod.enchanted_module": "Enchanted Module",
+
+  "block.lunas-mod.compact_iron_block": "Compact Iron Block",
+
+  "subtitles.lunas-mod.new_music1": "Lewis Plays"
+}

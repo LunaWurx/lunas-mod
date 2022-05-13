@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+      "lunas-mod:reinforced_wood_pb",
+      "lunas-mod:reinforced_stone_pb",
+      "lunas-mod:empty_module",
+      "lunas-mod:gilded_module",
+      "lunas-mod:powered_module",
+      "lunas-mod:enchanted_module"
+    ]
+  }

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " 1 ",
+        " 1 "
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:pebble_block"
+        },
+        "1": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+      "item": "minecraft:stone_pickaxe"
+    }
+  }

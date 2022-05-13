@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:metal_sheeting"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:metal_panel",
+      "count": 4
+    }
+  }

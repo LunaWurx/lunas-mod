@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "lunas-mod",
+  "version": "${version}",
+
+  "name": "Luna's Mod",
+  "description": "Adds new tools, armor, blocks, and foods for your enjoyment!",
+  "authors": [
+    "Luna N. Willis"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/lunas-mod",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/lunas-mod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "lunawurx.github.io.lunasmod.LunaStuffMod"
+    ]
+  },
+  "mixins": [
+    "lunas-mod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Getting a Better Upgrade"
+        },
+        "description": {
+            "text": "Make a Refined Stone Pickaxe"
+        },
+        "icon": {
+            "item": "lunas-mod:refined_stone_pickaxe"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "hasNewPick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["lunas-mod:refined_stone_pickaxe"],
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "adventure:refined_stone",
+    "requirements": [
+        [
+            "hasNewPick"
+        ]
+    ]
+}

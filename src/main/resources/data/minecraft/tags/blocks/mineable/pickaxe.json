@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+      "lunas-mod:pebble_block",
+      "lunas-mod:refined_stone_b",
+      "lunas-mod:reinforced_wood_pb",
+      "lunas-mod:reinforced_stone_pb",
+      "lunas-mod:metal_structure",
+      "lunas-mod:metal_framing",
+      "lunas-mod:empty_module",
+      "lunas-mod:gilded_module",
+      "lunas-mod:powered_module",
+      "lunas-mod:enchanted_module",
+      "lunas-mod:blast_proof_wall",
+      "lunas-mod:compact_iron_block",
+      "lunas-mod:fake_bedrock",
+      "lunas-mod:copper_conductor"
+    ]
+  }

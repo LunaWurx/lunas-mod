@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SP",
+        " #",
+        " #"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:refined_stone"
+        },
+        "S": {
+            "item": "lunas-mod:metal_sheeting"
+        },
+        "P": {
+            "item": "lunas-mod:metal_panel"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:heavy_mold_h",
+      "count": 1
+    }
+  }

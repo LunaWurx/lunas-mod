@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#x#",
+        "RRR",
+        "#x#"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:copper_sheeting"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "x": {
+            "item": "lunas-mod:copper_panel"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:copper_conductor",
+      "count": 3
+    }
+  }
