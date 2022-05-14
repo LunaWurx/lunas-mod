@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:cobblestone"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+      "SS",
+      "SS"
   ],
+  "key": {
+      "S": {
+          "item": "minecraft:cobblestone"
+      }
+  },
   "result": {
-    "count": 12,
-    "item": "lunas-mod:pebble"
+    "item": "lunas-mod:pebble",
+    "count": 45
   }
 }
