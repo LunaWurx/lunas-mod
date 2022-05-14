@@ -135,11 +135,6 @@ public class LunaStuffMod implements ModInitializer {
     
     
 
-    public static final ItemGroup LUNAS_GROUP = FabricItemGroupBuilder.create(new Identifier(MODID, "lunas"))
-        .icon(() -> new ItemStack(PEBBLE_ITEM))
-        .build();
-
-    @Override
 
     
     
@@ -148,7 +143,6 @@ public class LunaStuffMod implements ModInitializer {
         DefaultedList<ItemStack> stacks = DefaultedList.ofSize(2);
         stacks.add(new ItemStack(PEBBLE_ITEM));
         stacks.add(new ItemStack(WOOD_SHAVING_ITEM));
-        LUNAS_GROUP.appendStacks(stacks);
         
         //ITEMS --------
 
