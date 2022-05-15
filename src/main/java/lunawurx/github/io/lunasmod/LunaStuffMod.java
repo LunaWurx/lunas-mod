@@ -92,6 +92,12 @@ public class LunaStuffMod implements ModInitializer {
     public static final Item MOLD_SH = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
     public static final Item MOLD_SW = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
 
+    public static final Item C_D_A_S = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
+    public static final Item C_D_H_S = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
+    public static final Item C_D_P_S = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
+    public static final Item C_D_SH_S = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
+    public static final Item C_D_SW_S = new Item(new FabricItemSettings().group(LunaStuffMod.LUNA_STUFF));
+
     public static final Item COPPER_SHEETING_ITEM = new Item(new FabricItemSettings().group(LunaStuffMod.METALS_RELATED));
     public static final Item COPPER_PANEL_ITEM = new Item(new FabricItemSettings().group(LunaStuffMod.METALS_RELATED));
 
@@ -108,6 +114,9 @@ public class LunaStuffMod implements ModInitializer {
     public static final Block PEBBLE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.BASALT));
     
     public static final Block FAKE_BEDROCK = new Block(FabricBlockSettings.of(Material.STONE).strength(125.0f).requiresTool().sounds(BlockSoundGroup.GLASS));
+
+    public static final Block SMOOTHER_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block SMOOTHEST_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block REINFORCED_PEBBLE_BLOCK_WOOD = new Block(FabricBlockSettings.of(Material.STONE).strength(16.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
     public static final Block REINFORCED_PEBBLE_BLOCK_STONE = new Block(FabricBlockSettings.of(Material.METAL).strength(22.25f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
@@ -178,6 +187,14 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "heavy_mold_sh"), MOLD_SH);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "heavy_mold_sw"), MOLD_SW);
 
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "c_d_axe_sheeting"), C_D_A_S);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "c_d_hoe_sheeting"), C_D_H_S);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "c_d_pickaxe_sheeting"), C_D_P_S);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "c_d_shovel_sheeting"), C_D_SH_S);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "c_d_sword_sheeting"), C_D_SW_S);
+
+        
+
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "copper_sheeting"), COPPER_SHEETING_ITEM);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "copper_panel"), COPPER_PANEL_ITEM);
 
@@ -208,6 +225,12 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "chiseled_diamond_sword"), new SwordBase(new ToolMaterialChiseledDiamond()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "chiseled_diamond_hoe"), new HoeBase(new ToolMaterialChiseledDiamond()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "chiseled_diamond_shovel"), new ShovelBase(new ToolMaterialChiseledDiamond()));
+
+        Registry.register(Registry.ITEM, new Identifier(MODID, "coated_diamond_pickaxe"), new PickaxeBase(new ToolMaterialCoatedDiamond()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "coated_diamond_axe"), new AxeBase(new ToolMaterialCoatedDiamond()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "coated_diamond_sword"), new SwordBase(new ToolMaterialCoatedDiamond()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "coated_diamond_hoe"), new HoeBase(new ToolMaterialCoatedDiamond()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "coated_diamond_shovel"), new ShovelBase(new ToolMaterialCoatedDiamond()));
 
             //armors
         Registry.register(Registry.ITEM, new Identifier(MODID, "panel_helmet"), new BaseArmor(PANEL_ARMOR, EquipmentSlot.HEAD));
@@ -271,6 +294,12 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "fake_bedrock"), FAKE_BEDROCK);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "fake_bedrock"), new BlockItem(FAKE_BEDROCK, new FabricItemSettings().group(LunaStuffMod.MATERIALS)));
         
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "smoother_stone"), SMOOTHER_STONE);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "smoother_stone"), new BlockItem(SMOOTHER_STONE, new FabricItemSettings().group(LunaStuffMod.MATERIALS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "smoothest_stone"), SMOOTHEST_STONE);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "smoothest_stone"), new BlockItem(SMOOTHEST_STONE, new FabricItemSettings().group(LunaStuffMod.MATERIALS)));
+
+
         //OTHER --------
 
 

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:smooth_stone"
+    },
+    "result": "lunas-mod:smoother_stone",
+    "experience": 0.1,
+    "cookingtime": 200
+}

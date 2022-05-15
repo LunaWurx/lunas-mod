@@ -4,42 +4,42 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 
-public class ToolMaterialChiseledDiamond implements ToolMaterial {
+public class ToolMaterialCoatedDiamond implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
 
-        return 8.0f;
+        return 12.0f;
     }
 
     @Override
     public int getDurability() {
         
-        return 2048;
+        return 4096;
     }
 
     @Override
     public int getEnchantability() {
         
-        return 30;
+        return 31;
     }
 
     @Override
     public int getMiningLevel() {
         
-        return 3;
+        return 4;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
         
-        return 16;
+        return 24;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
         
-        return Ingredient.ofItems(LunaStuffMod.NETHERITE_SCRAP_SHEETING);
+        return Ingredient.ofItems(LunaStuffMod.NETHERITE_DIAMOND);
     }
 
     

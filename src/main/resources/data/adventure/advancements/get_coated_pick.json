@@ -2,13 +2,13 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "I FEEL DAH POWAH"
+            "text": "Getting an Even Betterestesterer Upgrade"
         },
         "description": {
-            "text": "Get a Powered Module"
+            "text": "Make a Netherite Coated Diamond Pickaxe"
         },
         "icon": {
-            "item": "lunas-mod:powered_module"
+            "item": "lunas-mod:coated_diamond_pickaxe"
         },
         "frame": "goal",
         "show_toast": true,
@@ -17,26 +17,22 @@
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "blast": {
+        "hasNewPick": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": ["lunas-mod:powered_module"],
-                        "count": {
-                            "min": 1,
-                            "max": 64
-                        }
+                        "items": ["lunas-mod:coated_diamond_pickaxe"],
+                        "count": 1
                     }
                 ]
             }
         }
     },
-    "parent": "adventure:module_get",
+    "parent": "adventure:get_chiseled_pick",
     "requirements": [
         [
-            "blast"
+            "hasNewPick"
         ]
     ]
-
 }

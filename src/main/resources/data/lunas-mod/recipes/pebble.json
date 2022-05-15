@@ -1,8 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-      "SS",
-      "SS"
+      "S"
   ],
   "key": {
       "S": {
@@ -11,6 +10,6 @@
   },
   "result": {
     "item": "lunas-mod:pebble",
-    "count": 45
+    "count": 8
   }
 }

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FF",
+        "FS",
+        " S"
+    ],
+    "key": {
+        "F": {
+            "item": "lunas-mod:netherite_diamond"
+        },
+        "S": {
+            "item": "lunas-mod:netherite_scrap_sheeting"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:c_d_axe_sheeting",
+      "count": 1
+    }
+  }

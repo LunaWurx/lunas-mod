@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "lunas-mod:chiseled_diamond_axe"
+    },
+    "addition": {
+        "item": "lunas-mod:c_d_axe_sheeting"
+    },
+    "result": {
+        "item": "lunas-mod:coated_diamond_axe"
+    }
+}

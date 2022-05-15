@@ -14,6 +14,8 @@
       "lunas-mod:blast_proof_wall",
       "lunas-mod:compact_iron_block",
       "lunas-mod:fake_bedrock",
+      "lunas-mod:smoother_stone",
+      "lunas-mod:smoothest_stone",
       "lunas-mod:copper_conductor"
     ]
   }

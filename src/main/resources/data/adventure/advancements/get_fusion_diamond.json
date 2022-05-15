@@ -2,27 +2,27 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "I FEEL DAH POWAH"
+            "text": "Shine Dull, Like This Diamond"
         },
         "description": {
-            "text": "Get a Powered Module"
+            "text": "Craft a Fusion Diamond"
         },
         "icon": {
-            "item": "lunas-mod:powered_module"
+            "item": "lunas-mod:netherite_diamond"
         },
-        "frame": "goal",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false,
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "blast": {
+        "sheetGet": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": ["lunas-mod:powered_module"],
+                        "items": ["lunas-mod:netherite_diamond"],
                         "count": {
                             "min": 1,
                             "max": 64
@@ -32,10 +32,10 @@
             }
         }
     },
-    "parent": "adventure:module_get",
+    "parent": "adventure:get_netherite_sheeting",
     "requirements": [
         [
-            "blast"
+            "sheetGet"
         ]
     ]
 

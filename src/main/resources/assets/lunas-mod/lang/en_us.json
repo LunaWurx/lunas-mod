@@ -52,10 +52,22 @@
   "item.lunas-mod.heavy_mold_sw": "Heavy Iron Sword Mold",
 
   "item.lunas-mod.chiseled_diamond_axe": "Chiseled Diamond Axe",
-  "item.lunas-mod.chiseled_diamond_shovel": "Chiseled Diamond Shivel",
+  "item.lunas-mod.chiseled_diamond_shovel": "Chiseled Diamond Shovel",
   "item.lunas-mod.chiseled_diamond_sword": "Chiseled Diamond Sword",
   "item.lunas-mod.chiseled_diamond_hoe": "Chiseled Diamond Hoe",
   "item.lunas-mod.chiseled_diamond_pickaxe": "Chiseled Diamond Pickaxe",
+
+  "item.lunas-mod.c_d_pickaxe_sheeting": "Netherite Coated Diamond Pickaxe Plating",
+  "item.lunas-mod.c_d_axe_sheeting": "Netherite Coated Diamond Axe Plating",
+  "item.lunas-mod.c_d_hoe_sheeting": "Netherite Coated Diamond Hoe Plating",
+  "item.lunas-mod.c_d_shovel_sheeting": "Netherite Coated Diamond Shovel Plating",
+  "item.lunas-mod.c_d_sword_sheeting": "Netherite Coated Diamond Sword Plating",
+
+  "item.lunas-mod.coated_diamond_axe": "Netherite Coated Diamond Axe",
+  "item.lunas-mod.coated_diamond_shovel": "Netherite Coated Diamond Shovel",
+  "item.lunas-mod.coated_diamond_sword": "Netherite Coated Diamond Sword",
+  "item.lunas-mod.coated_diamond_hoe": "Netherite Coated Diamond Hoe",
+  "item.lunas-mod.coated_diamond_pickaxe": "Netherite Coated Diamond Pickaxe",
 
   "item.lunas-mod.metal_sheeting": "Iron Sheeting",
   "item.lunas-mod.metal_panel": "Iron Panel",
@@ -81,6 +93,10 @@
   "block.lunas-mod.metal_structure": "Metal Structure Block",
   "block.lunas-mod.metal_framing": "Metal Framing Block",
   "block.lunas-mod.blast_proof_wall": "Blast Proof Wall",
+
+  "block.lunas-mod.smoother_stone": "Smoother Stone",
+  "block.lunas-mod.smoothest_stone": "Smoothest Stone",
+
 
   "block.lunas-mod.empty_module": "Empty Module",
   "block.lunas-mod.gilded_module": "Gilded Module",
