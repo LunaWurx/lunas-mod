@@ -34,7 +34,12 @@ public class LunaStuffMod implements ModInitializer {
 
     public static final ItemGroup LUNA_STUFF = FabricItemGroupBuilder.build(
         new Identifier("lunas-mod", "tools"),
-        () -> new ItemStack(Blocks.CRYING_OBSIDIAN));
+        () -> new ItemStack(Blocks.COBBLESTONE));
+
+
+    public static final ItemGroup PEBBLES_STUFF = FabricItemGroupBuilder.build(
+        new Identifier("lunas-mod", "pebbles_stuff"),
+        () -> new ItemStack(Blocks.STONE_BUTTON));
 
 
     public static final ItemGroup FOODS_CATEG = FabricItemGroupBuilder.build(
@@ -50,11 +55,7 @@ public class LunaStuffMod implements ModInitializer {
     public static final ItemGroup METALS_RELATED = FabricItemGroupBuilder.build(
         new Identifier("lunas-mod", "metals_related"),
         () -> new ItemStack(Blocks.IRON_BLOCK));
-
-        
-    public static final ItemGroup PEBBLES_STUFF = FabricItemGroupBuilder.build(
-        new Identifier("lunas-mod", "pebbles_stuff"),
-        () -> new ItemStack(Blocks.STONE_BUTTON));
+    
 
     public static final ItemGroup MATERIALS = FabricItemGroupBuilder.build(
         new Identifier("lunas-mod", "materials"),
@@ -75,8 +76,8 @@ public class LunaStuffMod implements ModInitializer {
     public static final Item DRIED_SWEET_BERRIES = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.75f).snack().alwaysEdible().build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item CRUSHED_BEETROOT = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item BEET_SWEET_SOUP = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(1.75f).build()).group(LunaStuffMod.FOODS_CATEG));
-    public static final Item BURGER_ITEM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(4.25f).build()).group(LunaStuffMod.FOODS_CATEG));
-    public static final Item APPLE_PIE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(9).saturationModifier(0.55f).build()).group(LunaStuffMod.FOODS_CATEG));
+    public static final Item BURGER_ITEM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(4.25f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(1));
+    public static final Item APPLE_PIE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(9).saturationModifier(0.55f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(4));
 
     public static final Item BEDROCK_CHIP = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
     public static final Item BEDROCK_SHARD = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
@@ -109,25 +110,25 @@ public class LunaStuffMod implements ModInitializer {
     public static final Block SPRUCE_REFINED_PLANKS_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(3.0f, 5.0f).requiresTool().sounds(BlockSoundGroup.WOOD));
     public static final Block JUNGLE_REFINED_PLANKS_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(3.0f, 5.0f).requiresTool().sounds(BlockSoundGroup.WOOD));
     public static final Block DARK_OAK_REFINED_PLANKS_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(3.0f, 5.0f).requiresTool().sounds(BlockSoundGroup.WOOD));
-    public static final Block REFINED_STONE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f, 8.0f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block REFINED_STONE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(5.0f, 8.0f).requiresTool().sounds(BlockSoundGroup.STONE));
 
-    public static final Block PEBBLE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.BASALT));
+    public static final Block PEBBLE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool().sounds(BlockSoundGroup.BASALT));
     
-    public static final Block FAKE_BEDROCK = new Block(FabricBlockSettings.of(Material.STONE).strength(125.0f).requiresTool().sounds(BlockSoundGroup.GLASS));
+    public static final Block FAKE_BEDROCK = new Block(FabricBlockSettings.of(Material.STONE).strength(225.0f).requiresTool().sounds(BlockSoundGroup.GLASS));
 
-    public static final Block SMOOTHER_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE));
-    public static final Block SMOOTHEST_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block SMOOTHER_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block SMOOTHEST_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block REINFORCED_PEBBLE_BLOCK_WOOD = new Block(FabricBlockSettings.of(Material.STONE).strength(16.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
     public static final Block REINFORCED_PEBBLE_BLOCK_STONE = new Block(FabricBlockSettings.of(Material.METAL).strength(22.25f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
 
     public static final Block COPPER_CONDUCTION_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(10.5f, 5.25f).requiresTool().sounds(BlockSoundGroup.COPPER));
 
-    public static final Block METAL_FRAMING_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(10.5f, 15.25f).requiresTool().sounds(BlockSoundGroup.NETHERITE));
+    public static final Block METAL_FRAMING_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(11.5f, 15.25f).requiresTool().sounds(BlockSoundGroup.NETHERITE));
     public static final Block METAL_STRUCTURE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(18.25f, 18.50f).requiresTool().sounds(BlockSoundGroup.NETHERITE));
-    public static final Block BLAST_PROOF_WALL = new Block(FabricBlockSettings.of(Material.METAL).strength(10.25f, 36.50f).requiresTool().sounds(BlockSoundGroup.NETHERITE));
+    public static final Block BLAST_PROOF_WALL = new Block(FabricBlockSettings.of(Material.METAL).strength(9.25f, 36.50f).requiresTool().sounds(BlockSoundGroup.NETHERITE));
 
-    public static final Block COMPACT_IRON_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(3.25f, 8.50f).requiresTool().sounds(BlockSoundGroup.NETHERITE)); 
+    public static final Block COMPACT_IRON_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(2.25f, 8.50f).requiresTool().sounds(BlockSoundGroup.NETHERITE)); 
 
     public static final Block MODULE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(8.25f, 2.25f).requiresTool().sounds(BlockSoundGroup.STONE));
     public static final Block GILDED_MODULE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(13.25f, 11.50f).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE));
@@ -304,12 +305,12 @@ public class LunaStuffMod implements ModInitializer {
 
 
             //fuels
-        FuelRegistry.INSTANCE.add(REFINED_PLANK_ITEM, 200);
-        FuelRegistry.INSTANCE.add(ACACIA_REFINED_PLANK_ITEM, 200);
-        FuelRegistry.INSTANCE.add(BIRCH_REFINED_PLANK_ITEM, 200);
-        FuelRegistry.INSTANCE.add(SPRUCE_REFINED_PLANK_ITEM, 200);
-        FuelRegistry.INSTANCE.add(DARK_OAK_REFINED_PLANK_ITEM, 200);
-        FuelRegistry.INSTANCE.add(JUNGLE_REFINED_PLANK_ITEM, 200);
+        FuelRegistry.INSTANCE.add(REFINED_PLANK_ITEM, 400);
+        FuelRegistry.INSTANCE.add(ACACIA_REFINED_PLANK_ITEM, 400);
+        FuelRegistry.INSTANCE.add(BIRCH_REFINED_PLANK_ITEM, 400);
+        FuelRegistry.INSTANCE.add(SPRUCE_REFINED_PLANK_ITEM, 400);
+        FuelRegistry.INSTANCE.add(DARK_OAK_REFINED_PLANK_ITEM, 400);
+        FuelRegistry.INSTANCE.add(JUNGLE_REFINED_PLANK_ITEM, 400);
         
         FuelRegistry.INSTANCE.add(REFINED_PLANKS_BLOCK, 350);
         FuelRegistry.INSTANCE.add(ACACIA_REFINED_PLANKS_BLOCK, 350);
@@ -317,6 +318,8 @@ public class LunaStuffMod implements ModInitializer {
         FuelRegistry.INSTANCE.add(SPRUCE_REFINED_PLANKS_BLOCK, 350);
         FuelRegistry.INSTANCE.add(DARK_OAK_REFINED_PLANKS_BLOCK, 350);
         FuelRegistry.INSTANCE.add(JUNGLE_REFINED_PLANKS_BLOCK, 350);
+
+        FuelRegistry.INSTANCE.add(POWERED_MODULE_BLOCK, 160000);
 
         Registry.register(Registry.SOUND_EVENT, LunaStuffMod.LEWIS_SOUND_ID, LEWIS);
 
