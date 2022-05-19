@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:canvas"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:canvas_block"
+    }
+  }

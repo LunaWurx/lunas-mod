@@ -6,6 +6,7 @@
   "itemGroup.lunas-mod.metals_related": "Metal-Made",
   "itemGroup.lunas-mod.pebbles_stuff": "Pebble Stuff",
   "itemGroup.lunas-mod.materials": "Materials",
+  "itemGroup.lunas-mod.decorations": "Decorations",
 
   "item.lunas-mod.wood_shaving": "Wood Shaving",
   "block.lunas-mod.pebble_block": "Pebble Block",
@@ -84,6 +85,9 @@
   "item.lunas-mod.beetroot_berry_soup": "Beetroot Berry Soup",
   "item.lunas-mod.burger": "Burger",
   "item.lunas-mod.apple_pie": "Apple Pie",
+  "item.lunas-mod.crispy_apple": "Baked Apple",
+
+  "item.lunas-mod.canvas": "Canvas",
 
 
   "block.lunas-mod.copper_conductor": "Copper Conduction Block",
@@ -104,6 +108,10 @@
   "block.lunas-mod.enchanted_module": "Enchanted Module",
 
   "block.lunas-mod.compact_iron_block": "Compact Iron Block",
+
+  "block.lunas-mod.canvas_block": "Blank Canvas Block",
+  "block.lunas-mod.canvas_block_w": "White Canvas Block",
+  "block.lunas-mod.canvas_block_b": "Black Canvas Block",
 
   "subtitles.lunas-mod.new_music1": "Lewis Plays"
 }

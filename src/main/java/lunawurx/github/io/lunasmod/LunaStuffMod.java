@@ -21,6 +21,7 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -32,9 +33,11 @@ public class LunaStuffMod implements ModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
-    public static final ItemGroup LUNA_STUFF = FabricItemGroupBuilder.build(
-        new Identifier("lunas-mod", "tools"),
-        () -> new ItemStack(Blocks.COBBLESTONE));
+
+    public static final ItemGroup LUNA_STUFF = FabricItemGroupBuilder.create(
+        new Identifier("lunas-mod", "tools"))
+        .icon(() -> new ItemStack(Items.IRON_AXE))
+        .build();
 
 
     public static final ItemGroup PEBBLES_STUFF = FabricItemGroupBuilder.build(
@@ -57,9 +60,15 @@ public class LunaStuffMod implements ModInitializer {
         () -> new ItemStack(Blocks.IRON_BLOCK));
     
 
-    public static final ItemGroup MATERIALS = FabricItemGroupBuilder.build(
-        new Identifier("lunas-mod", "materials"),
-        () -> new ItemStack(Blocks.DIAMOND_ORE));
+    public static final ItemGroup MATERIALS = FabricItemGroupBuilder.create(
+        new Identifier("lunas-mod", "materials"))
+        .icon(() -> new ItemStack(Items.RAW_GOLD))
+        .build();
+
+        
+    public static final ItemGroup DECORATIONS = FabricItemGroupBuilder.build(
+        new Identifier("lunas-mod", "decorations"),
+        () -> new ItemStack(Blocks.WHITE_WOOL));
 
 
     public static final Item REFINED_PLANK_ITEM = new Item(new FabricItemSettings().group(LunaStuffMod.REFINED).maxCount(64));
@@ -72,12 +81,15 @@ public class LunaStuffMod implements ModInitializer {
     public static final Item PEBBLE_ITEM = new Item(new FabricItemSettings().maxCount(64).group(LunaStuffMod.PEBBLES_STUFF));
     public static final Item WOOD_SHAVING_ITEM = new Item(new FabricItemSettings().group(LunaStuffMod.REFINED));
 
+    public static final Item CANVAS = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
+
     public static final Item COOKED_BEETROOT_SEEDS = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).snack().build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item DRIED_SWEET_BERRIES = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.75f).snack().alwaysEdible().build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item CRUSHED_BEETROOT = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(3).saturationModifier(1f).build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item BEET_SWEET_SOUP = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(1.75f).build()).group(LunaStuffMod.FOODS_CATEG));
     public static final Item BURGER_ITEM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(4.25f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(1));
     public static final Item APPLE_PIE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(9).saturationModifier(0.55f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(4));
+    public static final Item CRISPY_APPLE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.75f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(64));
 
     public static final Item BEDROCK_CHIP = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
     public static final Item BEDROCK_SHARD = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
@@ -118,6 +130,11 @@ public class LunaStuffMod implements ModInitializer {
 
     public static final Block SMOOTHER_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool().sounds(BlockSoundGroup.STONE));
     public static final Block SMOOTHEST_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f).requiresTool().sounds(BlockSoundGroup.STONE));
+    
+    public static final Block CANVAS_BLOCK = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block BLACK_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block WHITE_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+
 
     public static final Block REINFORCED_PEBBLE_BLOCK_WOOD = new Block(FabricBlockSettings.of(Material.STONE).strength(16.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
     public static final Block REINFORCED_PEBBLE_BLOCK_STONE = new Block(FabricBlockSettings.of(Material.METAL).strength(22.25f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
@@ -182,6 +199,8 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "metal_sheeting"), METAL_SHEETING_ITEM);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "metal_panel"), METAL_PANEL_ITEM);
 
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas"), CANVAS);
+
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "heavy_mold_a"), MOLD_A);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "heavy_mold_h"), MOLD_H);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "heavy_mold_p"), MOLD_P);
@@ -206,6 +225,7 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "beetroot_berry_soup"), BEET_SWEET_SOUP);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "burger"), BURGER_ITEM);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "apple_pie"), APPLE_PIE);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "crispy_apple"), CRISPY_APPLE);
 
 
             //tools
@@ -299,6 +319,13 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "smoother_stone"), new BlockItem(SMOOTHER_STONE, new FabricItemSettings().group(LunaStuffMod.MATERIALS)));
         Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "smoothest_stone"), SMOOTHEST_STONE);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "smoothest_stone"), new BlockItem(SMOOTHEST_STONE, new FabricItemSettings().group(LunaStuffMod.MATERIALS)));
+        
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block"), CANVAS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block"), new BlockItem(CANVAS_BLOCK, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_b"), BLACK_CANVAS);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_b"), new BlockItem(BLACK_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_w"), WHITE_CANVAS);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_w"), new BlockItem(WHITE_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
 
 
         //OTHER --------
@@ -319,7 +346,7 @@ public class LunaStuffMod implements ModInitializer {
         FuelRegistry.INSTANCE.add(DARK_OAK_REFINED_PLANKS_BLOCK, 350);
         FuelRegistry.INSTANCE.add(JUNGLE_REFINED_PLANKS_BLOCK, 350);
 
-        FuelRegistry.INSTANCE.add(POWERED_MODULE_BLOCK, 160000);
+        FuelRegistry.INSTANCE.add(POWERED_MODULE_BLOCK, 16000);
 
         Registry.register(Registry.SOUND_EVENT, LunaStuffMod.LEWIS_SOUND_ID, LEWIS);
 
