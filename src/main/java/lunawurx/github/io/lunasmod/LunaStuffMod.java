@@ -90,6 +90,8 @@ public class LunaStuffMod implements ModInitializer {
     public static final Item BURGER_ITEM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(4.25f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(1));
     public static final Item APPLE_PIE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(9).saturationModifier(0.55f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(4));
     public static final Item CRISPY_APPLE = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.75f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(64));
+    public static final Item CHICKEN_LEG = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(1).saturationModifier(0.5f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(64));
+    public static final Item COOKED_CHICKEN_LEG = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(0.75f).build()).group(LunaStuffMod.FOODS_CATEG).maxCount(64));
 
     public static final Item BEDROCK_CHIP = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
     public static final Item BEDROCK_SHARD = new Item(new FabricItemSettings().group(LunaStuffMod.MATERIALS));
@@ -134,7 +136,15 @@ public class LunaStuffMod implements ModInitializer {
     public static final Block CANVAS_BLOCK = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLACK_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
     public static final Block WHITE_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
-
+    public static final Block BLUE_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block YELLOW_CANVAS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block CANVAS_BLOCK_RED = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block CANVAS_BLOCK_GREEN = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    
+    public static final Block CANVAS_CACTUS = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block CANVAS_LAVA = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    public static final Block CANVAS_WATER = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.1f).sounds(BlockSoundGroup.WOOL));
+    
 
     public static final Block REINFORCED_PEBBLE_BLOCK_WOOD = new Block(FabricBlockSettings.of(Material.STONE).strength(16.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
     public static final Block REINFORCED_PEBBLE_BLOCK_STONE = new Block(FabricBlockSettings.of(Material.METAL).strength(22.25f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE));
@@ -151,6 +161,10 @@ public class LunaStuffMod implements ModInitializer {
     public static final Block GILDED_MODULE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(13.25f, 11.50f).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE));
     public static final Block POWERED_MODULE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(10.25f, 10.25f).requiresTool().sounds(BlockSoundGroup.LANTERN));
     public static final Block ENCHANTED_MODULE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(11.25f, 17.50f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
+    
+    public static final Block DENSE_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0).sounds(BlockSoundGroup.GRASS));
+    public static final Block FLORAL_DENSE_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0).sounds(BlockSoundGroup.GRASS));
+    public static final Block DROOPY_DENSE_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0).sounds(BlockSoundGroup.GRASS));
 
     public static final Identifier LEWIS_SOUND_ID = new Identifier("lunas-mod:lewis_survival_mode");
     public static SoundEvent LEWIS = new SoundEvent(LEWIS_SOUND_ID);
@@ -226,6 +240,8 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "burger"), BURGER_ITEM);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "apple_pie"), APPLE_PIE);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "crispy_apple"), CRISPY_APPLE);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "chicken_leg"), CHICKEN_LEG);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "cooked_chicken_leg"), COOKED_CHICKEN_LEG);
 
 
             //tools
@@ -326,6 +342,28 @@ public class LunaStuffMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_b"), new BlockItem(BLACK_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
         Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_w"), WHITE_CANVAS);
         Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_w"), new BlockItem(WHITE_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_blue"), BLUE_CANVAS);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_blue"), new BlockItem(BLUE_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_y"), YELLOW_CANVAS);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_y"), new BlockItem(YELLOW_CANVAS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_r"), CANVAS_BLOCK_RED);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_r"), new BlockItem(CANVAS_BLOCK_RED, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_g"), CANVAS_BLOCK_GREEN);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_g"), new BlockItem(CANVAS_BLOCK_GREEN, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_lava"), CANVAS_LAVA);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_lava"), new BlockItem(CANVAS_LAVA, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_water"), CANVAS_WATER);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_water"), new BlockItem(CANVAS_WATER, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "canvas_block_cactus"), CANVAS_CACTUS);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "canvas_block_cactus"), new BlockItem(CANVAS_CACTUS, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "dense_leaves"), DENSE_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "dense_leaves"), new BlockItem(DENSE_LEAVES, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "floral_dense_leaves"), FLORAL_DENSE_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "floral_dense_leaves"), new BlockItem(FLORAL_DENSE_LEAVES, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("lunas-mod", "droopy_dense_leaves"), DROOPY_DENSE_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier("lunas-mod", "droopy_dense_leaves"), new BlockItem(DROOPY_DENSE_LEAVES, new FabricItemSettings().group(LunaStuffMod.DECORATIONS)));
 
 
         //OTHER --------

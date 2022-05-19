@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "lunas-mod:dense_leaves"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:droopy_dense_leaves",
+      "count": 3
+    }
+  }

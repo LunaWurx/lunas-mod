@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "lunas-mod:chicken_leg"
+    },
+    "result": "lunas-mod:cooked_chicken_leg",
+    "experience": 0.5,
+    "cookingtime": 100
+}

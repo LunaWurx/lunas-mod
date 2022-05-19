@@ -88,6 +88,8 @@
   "item.lunas-mod.crispy_apple": "Baked Apple",
 
   "item.lunas-mod.canvas": "Canvas",
+  "item.lunas-mod.chicken_leg": "Raw Chicken Leg",
+  "item.lunas-mod.cooked_chicken_leg": "Cooked Chicken Leg",
 
 
   "block.lunas-mod.copper_conductor": "Copper Conduction Block",
@@ -110,8 +112,19 @@
   "block.lunas-mod.compact_iron_block": "Compact Iron Block",
 
   "block.lunas-mod.canvas_block": "Blank Canvas Block",
-  "block.lunas-mod.canvas_block_w": "White Canvas Block",
-  "block.lunas-mod.canvas_block_b": "Black Canvas Block",
+  "block.lunas-mod.canvas_block_w": "White Painted Canvas Block",
+  "block.lunas-mod.canvas_block_b": "Black Painted Canvas Block",
+  "block.lunas-mod.canvas_block_y": "Yellow Painted Canvas Block",
+  "block.lunas-mod.canvas_block_blue": "Blue Painted Canvas Block",
+  "block.lunas-mod.canvas_block_g": "Green Painted Canvas Block",
+  "block.lunas-mod.canvas_block_r": "Red Painted Canvas Block",
+  "block.lunas-mod.canvas_block_lava": "Fake Lava Painted Canvas Block",
+  "block.lunas-mod.canvas_block_water": "Fake Water Painted Canvas Block",
+  "block.lunas-mod.canvas_block_cactus": "Fake Cactus Painted Canvas Block",
+
+  "block.lunas-mod.dense_leaves": "Dense Leaves",
+  "block.lunas-mod.droopy_dense_leaves": "Droopy Dense Leaves",
+  "block.lunas-mod.floral_dense_leaves": "Floral Dense Leaves",
 
   "subtitles.lunas-mod.new_music1": "Lewis Plays"
 }

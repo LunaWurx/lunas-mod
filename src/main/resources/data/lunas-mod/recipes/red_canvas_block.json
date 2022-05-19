@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:red_dye"
+      },
+      {
+        "item": "lunas-mod:canvas_block"
+      }
+      
+    ],
+    "result": {
+      "item": "lunas-mod:canvas_block_r"
+    }
+  }

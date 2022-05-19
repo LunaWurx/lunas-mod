@@ -1,0 +1,5 @@
+{
+    "variants": {
+      "": { "model": "lunas-mod:block/canvas_block_lava" }
+    }
+  }
