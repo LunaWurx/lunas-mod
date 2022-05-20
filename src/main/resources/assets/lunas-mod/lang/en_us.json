@@ -74,10 +74,16 @@
   "item.lunas-mod.metal_panel": "Iron Panel",
   "item.lunas-mod.copper_sheeting": "Copper Sheeting",
   "item.lunas-mod.copper_panel": "Copper Panel",
+  
   "item.lunas-mod.panel_helmet": "Panel-Made Helmet",
   "item.lunas-mod.panel_chestplate": "Panel-Made Chestplate",
   "item.lunas-mod.panel_leggings": "Panel-Made Leggings",
   "item.lunas-mod.panel_boots": "Panel-Made Boots",
+
+  "item.lunas-mod.wood_helmet": "Wood Helmet",
+  "item.lunas-mod.wood_chestplate": "Wood Chestplate",
+  "item.lunas-mod.wood_leggings": "Wood Leggings",
+  "item.lunas-mod.wood_boots": "Wood Boots",
 
   "item.lunas-mod.cooked_beetroot_seeds": "Cooked Beetroot Seeds",
   "item.lunas-mod.dehydrated_sweet_berries": "Dehydrated Sweet Berries",
@@ -93,6 +99,8 @@
 
 
   "block.lunas-mod.copper_conductor": "Copper Conduction Block",
+
+  "block.lunas-mod.compressed_coal_block": "Compressed Coal Block",
 
   "block.lunas-mod.fake_bedrock": "Fake Bedrock",
 

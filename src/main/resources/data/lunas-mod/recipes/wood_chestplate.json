@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "P P",
+        "###",
+        "PPP"
+    ],
+    "key": {
+        "#": {
+            "tag": "logs"
+        },
+        "P": {
+            "tag": "planks"
+        }
+    },
+    "result": {
+      "item": "lunas-mod:wood_chestplate"
+    }
+  }

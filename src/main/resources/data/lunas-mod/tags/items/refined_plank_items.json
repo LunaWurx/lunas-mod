@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "lunas-mod:acacia_refined_planks",
+        "lunas-mod:birch_refined_plank",
+        "lunas-mod:dark_oak_refined_plank",
+        "lunas-mod:jungle_refined_plank",
+        "lunas-mod:refined_plank",
+        "lunas-mod:spruce_refined_plank"
+        
+    ]
+}
